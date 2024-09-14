@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            border:2px solid black;
+            padding:34px;
+            margin:34px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <span class="container">
+        <span class="childContainer">
+            <div class="child">
+                i am a child
+            </div>
+        </span>
+    </span>
+
+    <script>
+        document.querySelector(".child").addEventListener("contextmenu",()=>{
+            alert("child was clicked")
+        })
+
+        document.querySelector(".childContainer").addEventListener("contextmenu",()=>{
+            alert("childContainer was clicked")
+        })
+
+        document.querySelector(".Container").addEventListener("contextmenu",()=>{
+            alert("Container was clicked")
+        })
+    </script>
+</body>
+</html>
